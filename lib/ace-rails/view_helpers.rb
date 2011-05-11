@@ -21,12 +21,12 @@ module Ace
 <script type='text/javascript' src='/javascripts/ace/mode-#{mode}.js' charset='utf-8' ></script>
 #{theme_script_tag}
 <script type='text/javascript'>
-  $(document).ready(function(){
+  window.onload = function() {
     var editor = ace.edit('#{id}');
     #{theme_setter}
     var #{mode_class} = require("ace/mode/#{mode}").Mode;
     editor.getSession().setMode(new #{mode_class}());
-  });
+  };
 </script>
 HTML
 
