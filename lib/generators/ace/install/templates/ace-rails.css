@@ -1,0 +1,23 @@
+/* Style for ace-rails */
+
+#editor_container {
+  clear: both;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+#editor { 
+  position: absolute;
+  background-color: #fff;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid #333;
+}
+
+#editor_footer {
+  clear: both;
+}
